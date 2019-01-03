@@ -29,6 +29,7 @@ export interface RNSensitiveInfoOptions {
   kSecUseOperationPrompt?: string;
   sharedPreferencesName?: string;
   touchID?: boolean;
+  unarchiveValue: boolean;
 }
 
 export declare function setItem(key: string, value: string, options: RNSensitiveInfoOptions): Promise<null>;
