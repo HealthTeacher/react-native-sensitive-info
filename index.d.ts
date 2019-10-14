@@ -37,6 +37,7 @@ export interface RNSensitiveInfoOptions {
   touchID?: boolean;
   showModal?: boolean;
   kSecUseOperationPrompt?: string;
+  kLocalizedFallbackTitle?: string;
   strings?: RNSensitiveInfoAndroidDialogStrings;
  unarchiveValue: boolean;
 }
@@ -63,4 +64,4 @@ export declare function isSensorAvailable(): Promise<
 export declare function isHardwareDetected(): Promise<boolean>;
 export declare function hasEnrolledFingerprints(): Promise<boolean>;
 export declare function cancelFingerprintAuth(): void;
-export declare function setInvalidatedByBiometricEnrollment(boolean): void;
+export declare function setInvalidatedByBiometricEnrollment(set: boolean): void;
